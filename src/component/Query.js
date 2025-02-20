@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './query.css'
 import { FaEnvelope, FaStar } from 'react-icons/fa';
 import img from '../image/bg1.jpg'
+import logo from '../image/logo.png'
+
 
 function Query() {
   const [rating, setRating] = useState(0);
@@ -46,11 +48,18 @@ function Query() {
           marginBottom: "5%"
         }}
       >
+        {/* <img style={{position:"absolute",width:"1000px",zIndex:"-1"}} src={rev} alt="rev"></img> */}
+        
+        <img className='App-logo' style={{width:"90px",position:"absolute",top:"45%",left:"32%"}}src={logo} alt='logo'/>
+        <img className='App-logo' style={{width:"90px",position:"absolute",top:"45%",left:"32.5%"}}src={logo} alt='logo'/>
+        <img className='App-logo' style={{width:"90px",position:"absolute",top:"45%",left:"61%"}}src={logo} alt='logo'/>
+        <img className='App-logo' style={{width:"90px",position:"absolute",top:"45%",left:"61.5%"}}src={logo} alt='logo'/>
         <FaEnvelope size={50} style={{ color: '#4A90E2', marginLeft: '45%' }} />
         <h1 style={{ textAlign: 'center', color: '#4A90E2' }}>FEEDBACK FORM</h1>
         <p style={{ textAlign: 'center' }}>
           The Query You Have or Feedback For Us
         </p>
+       
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '5px' }}
         >
           <FaStar
